@@ -70,7 +70,8 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--mute);margin-top:9
 
 /* ===== 02 site ===== */
 #s2 .left{position:absolute;left:96px;top:72px;width:560px}
-#s2 .plan{position:absolute;right:72px;top:64px;width:820px;height:600px}
+#s2 .plan{position:absolute;right:56px;top:40px;width:900px;height:560px}
+#s2 .plan+.cap{position:absolute;right:96px;top:604px}
 #s2 .stats{position:absolute;left:96px;right:96px;bottom:86px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
 .stat{padding:22px 24px 0 0}
 .stat .k{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;color:var(--mute);text-transform:uppercase}
@@ -256,6 +257,159 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--mute);margin-top:9
 #s12 .thanks p{font-family:var(--mono);font-size:13px;color:#7d857f;margin-top:16px;letter-spacing:.06em}
 #s12 .stage3d{right:60px;top:40px;width:560px;height:560px;opacity:.9}
 
+/* ===== shared for added slides ===== */
+.hd{position:absolute;left:96px;top:72px;width:900px;z-index:2}
+.hd h2{font-size:62px}
+.mul{mix-blend-mode:multiply}
+figure.fit img{object-fit:contain}
+.part{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;color:var(--mute);text-transform:uppercase;margin-bottom:10px}
+.dark .part{color:#6f7771}
+.facts{display:flex;flex-direction:column}
+.facts div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line);align-items:baseline}
+.facts div:last-child{border-bottom:1px solid var(--line)}
+.facts b{font-family:var(--serif);font-size:36px;font-weight:500;line-height:1}
+.facts b small{font-size:18px;color:var(--ink-2);margin-left:2px}
+.facts p{font-size:15.5px;line-height:1.45;color:var(--ink-2)}
+.facts p strong{color:var(--ink);font-weight:600}
+.cap{font-family:var(--mono);font-size:11.5px;color:var(--mute);line-height:1.5;letter-spacing:.02em}
+
+/* grove plan */
+#grove .facts{position:absolute;left:96px;top:330px;width:440px}
+#grove .plan{position:absolute;left:560px;top:58px;width:984px;height:612px}
+#grove .cap{position:absolute;left:560px;top:690px;width:940px}
+#grove .t01{position:absolute;left:560px;bottom:86px;right:96px;display:flex;gap:26px;align-items:center;background:var(--blush);padding:16px 22px}
+#grove .t01 b{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--rose);white-space:nowrap}
+#grove .t01 p{font-size:15.5px;line-height:1.45}
+
+/* section */
+#section .sec{position:absolute;left:80px;top:250px;width:960px;height:420px}
+#section .reads{position:absolute;left:96px;bottom:86px;width:930px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+#section .reads div{border-top:2px solid var(--ink);padding-top:14px}
+#section .reads b{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--rose)}
+#section .reads p{font-size:15.5px;line-height:1.45;color:var(--ink-2);margin-top:8px}
+#section .ph{position:absolute;left:1090px;top:72px;width:414px;height:600px}
+#section .ph+figcaption{position:absolute;left:1090px;top:684px;width:414px}
+
+/* planting */
+#plants .ph{position:absolute;left:96px;top:72px;width:470px;height:600px}
+#plants .ph+figcaption{position:absolute;left:96px;top:684px;width:470px}
+#plants .hd{left:640px;width:860px}
+#plants .lays{position:absolute;left:640px;top:300px;width:864px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+#plants .lay{border-top:6px solid;padding-top:14px}
+#plants .lay .t{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute)}
+#plants .lay h3{font-family:var(--serif);font-size:32px;font-weight:500;margin-top:8px;line-height:1}
+#plants .lay li{list-style:none;font-size:15px;line-height:1.4;color:var(--ink-2);margin-top:10px}
+#plants .lay li i{display:block;font-family:var(--cn);font-style:normal;font-size:14px;color:var(--mute)}
+#plants .rhythm{position:absolute;left:640px;right:96px;bottom:86px;height:190px}
+
+/* layers */
+#layers .stages{position:absolute;left:80px;right:80px;top:236px;height:282px}
+#layers .stages img{object-fit:contain}
+#layers .stagelab{position:absolute;left:96px;right:96px;top:520px;display:grid;grid-template-columns:repeat(5,1fr);font-family:var(--mono);font-size:12px;color:var(--ink-2);text-align:center;letter-spacing:.04em}
+#layers .charts{position:absolute;left:96px;top:580px;width:980px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.bars .ttl{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase;margin-bottom:10px}
+.bars .r{display:grid;grid-template-columns:150px 1fr 64px;align-items:center;gap:10px;height:30px;font-size:14px;color:var(--ink-2)}
+.bars .r i{display:block;height:16px}
+.bars .r span:last-child{font-family:var(--mono);font-size:13px;color:var(--ink);text-align:right}
+#layers .call{position:absolute;right:96px;top:584px;width:340px;border-left:2px solid var(--rose);padding-left:24px}
+#layers .call>b{font-family:var(--serif);font-size:84px;font-weight:500;line-height:.9;color:var(--rose)}
+#layers .call p b{color:var(--ink);font-weight:600}
+#layers .call p{font-size:15.5px;line-height:1.5;color:var(--ink-2);margin-top:12px}
+
+/* evidence */
+#evidence .hd{width:520px}
+#evidence .legend{position:absolute;left:96px;top:340px;width:470px}
+#evidence .legend>div{display:grid;grid-template-columns:22px 1fr;gap:14px;padding:11px 0;border-top:1px solid var(--line)}
+#evidence .legend i{width:18px;height:18px;margin-top:3px}
+#evidence .legend b{font-size:16px;font-weight:600}
+#evidence .legend b span{font-family:var(--cn);font-weight:400;color:var(--mute);margin-left:8px;font-size:14px}
+#evidence .legend p{font-size:14px;color:var(--ink-2);margin-top:2px;line-height:1.4}
+#evidence .fp{position:absolute;left:620px;top:90px;width:360px;height:488px}
+#evidence .md{position:absolute;left:980px;top:60px;width:560px;height:520px}
+#evidence .lab{position:absolute;top:596px;font-family:var(--mono);font-size:12px;color:var(--mute);letter-spacing:.08em}
+#evidence .principle{position:absolute;left:620px;right:96px;bottom:86px;border-top:1px solid var(--line);padding-top:18px}
+#evidence .principle p{font-family:var(--serif);font-size:30px;line-height:1.2}
+#evidence .principle p b{font-weight:500;font-style:italic;color:var(--rose)}
+
+/* ortho */
+#ortho .row{position:absolute;left:96px;top:250px;width:1060px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#ortho .row figure{height:350px;background:#fbfaf6;border:1px solid var(--line)}
+#ortho .row figure img{object-fit:contain;padding:10px}
+#ortho .row .k,#ortho .cuts .k{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--rose);margin:12px 0 4px}
+#ortho .row p{font-size:14.5px;color:var(--ink-2)}
+#ortho .cuts{position:absolute;left:1200px;top:72px;width:304px}
+#ortho .cuts>div:not(.k){display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center;margin-bottom:14px}
+#ortho .cuts figure{height:150px;background:#fbfaf6;border:1px solid var(--line)}
+#ortho .cuts figure img{object-fit:contain;padding:6px}
+#ortho .cuts p{font-size:13.5px;color:var(--ink-2);line-height:1.4}
+#ortho .note{position:absolute;left:96px;right:96px;bottom:86px;display:flex;gap:56px;font-family:var(--mono);font-size:14px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:18px}
+#ortho .note b{font-family:var(--serif);font-size:34px;font-weight:500;color:var(--ink);margin-right:8px}
+
+/* measure */
+#measure .ledger{position:absolute;left:96px;right:96px;top:250px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+#measure .col{padding:22px 24px;min-height:300px}
+#measure .col:nth-child(1){background:#e9e2d2}
+#measure .col:nth-child(2){background:#e4e8dc}
+#measure .col:nth-child(3){background:transparent;border:1.5px dashed rgba(29,38,33,.35)}
+#measure .col .t{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute)}
+#measure .col h3{font-family:var(--serif);font-size:30px;font-weight:500;margin:6px 0 10px}
+#measure .col h3 span{font-family:var(--cn);font-size:16px;color:var(--rose);margin-left:8px}
+#measure .col div{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-top:1px solid var(--line);font-size:15px;color:var(--ink-2);gap:12px}
+#measure .col div b{font-family:var(--serif);font-size:26px;font-weight:500;color:var(--ink);white-space:nowrap}
+#measure .strip{position:absolute;left:96px;right:96px;top:596px;height:200px}
+#measure .strip img{object-fit:contain;object-position:left center}
+#measure .strip+figcaption{position:absolute;left:96px;right:96px;bottom:40px}
+
+/* analysis gallery */
+#analysis .tabs{position:absolute;left:96px;top:226px;display:flex;gap:10px}
+#analysis .view{position:absolute;left:96px;top:290px;width:1080px;height:497px;background:#fff;border:1px solid var(--line)}
+#analysis .view{overflow:hidden}
+#analysis .view img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .4s}
+#analysis .view img.on{opacity:1}
+#analysis .side{position:absolute;left:1216px;top:290px;width:288px}
+#analysis .side .big{font-family:var(--serif);font-size:58px;font-weight:500;line-height:1;color:var(--rose)}
+#analysis .side h3{font-family:var(--serif);font-size:30px;font-weight:500;margin-top:18px;line-height:1.1}
+#analysis .side p{font-size:15.5px;line-height:1.5;color:var(--ink-2);margin-top:12px}
+#analysis .side .lim{font-family:var(--mono);font-size:12px;color:var(--mute);line-height:1.5;margin-top:18px;padding-top:12px;border-top:1px solid var(--line)}
+
+/* AR video */
+#arvideo{background:radial-gradient(ellipse 60% 80% at 50% 50%,#26302a 0%,var(--night) 70%)}
+#arvideo .hd{width:520px}
+#arvideo .phone{position:absolute;left:640px;top:44px;width:376px;height:812px;border-radius:52px;background:#050706;padding:12px;box-shadow:0 40px 90px -30px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08)}
+#arvideo video{width:100%;height:100%;border-radius:42px;object-fit:cover;display:block;background:#111}
+#arvideo .chap{position:absolute;left:96px;top:470px;width:470px;display:flex;flex-direction:column}
+#arvideo .chap button{display:grid;grid-template-columns:64px 1fr;text-align:left;font:inherit;color:#c9c4b8;background:none;border:0;border-top:1px solid rgba(238,232,220,.12);padding:12px 0;cursor:pointer;transition:color .2s}
+#arvideo .chap button:last-child{border-bottom:1px solid rgba(238,232,220,.12)}
+#arvideo .chap button span{font-family:var(--mono);font-size:13px;color:#7d857f;padding-top:3px}
+#arvideo .chap button b{font-weight:500;font-size:17px}
+#arvideo .chap button b i{font-style:normal;font-family:var(--cn);color:#8d918a;font-size:14px;margin-left:8px}
+#arvideo .chap button.on{color:#fff}
+#arvideo .chap button.on span{color:var(--sakura)}
+#arvideo .chap button.on b{color:var(--sakura)}
+#arvideo .obs{position:absolute;left:1090px;top:110px;width:414px}
+#arvideo .obs div{padding:18px 0;border-top:1px solid rgba(238,232,220,.12)}
+#arvideo .obs b{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--sakura);font-weight:500}
+#arvideo .obs p{font-size:16px;line-height:1.5;color:#c4c0b5;margin-top:6px}
+#arvideo .vbar{position:absolute;left:1090px;bottom:86px;width:414px;height:3px;background:rgba(255,255,255,.1)}
+#arvideo .vbar i{display:block;height:100%;width:0;background:var(--sakura)}
+
+/* limits */
+#limits table{position:absolute;left:96px;right:96px;top:250px;width:1408px;border-collapse:collapse}
+#limits th{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase;font-weight:500;text-align:left;padding:0 18px 12px 0;border-bottom:2px solid var(--ink)}
+#limits td{font-size:16px;line-height:1.45;color:var(--ink-2);padding:15px 18px 15px 0;border-bottom:1px solid var(--line);vertical-align:top}
+#limits td:first-child{font-family:var(--serif);font-size:23px;color:var(--ink);width:430px;line-height:1.2}
+#limits .prio{position:absolute;left:96px;right:96px;bottom:80px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+#limits .prio div{background:#fffdf8;border:1px solid var(--line);padding:16px 20px}
+#limits .prio b{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--rose)}
+#limits .prio p{font-size:15px;line-height:1.45;color:var(--ink-2);margin-top:6px}
+
+/* refs */
+#refs .cols{position:absolute;left:96px;right:96px;top:250px;display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+#refs h3{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--rose);font-weight:500;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+#refs li{list-style:none;font-size:14.5px;line-height:1.45;color:var(--ink-2);padding:10px 0;border-bottom:1px solid var(--line)}
+#refs li b{color:var(--ink);font-weight:600}
+#refs .team{position:absolute;left:96px;right:96px;bottom:80px;font-family:var(--mono);font-size:13px;color:var(--ink-2);letter-spacing:.06em}
+
 /* ===== UI ===== */
 #ui{position:fixed;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.08);z-index:20}
 #progress{height:100%;background:var(--sakura);width:0;transition:width .5s ease}
@@ -291,48 +445,31 @@ body.print .slide{transition:none!important}
     <span>Object</span><span>Sakura Avenue · 爱校路樱花树</span>
     <span>Group Members</span><span>吕思扬 · 李欣芸 · 张弥月 · 李成蹊 · 唐家辉 · 卓虹礼</span>
   </div>
-  <aside class="notes" data-t="0:25">Good morning. My project is about a tree you&#x27;ve probably walked past many times: the <b>cherry trees on Aixiao Road</b>. My title comes from four characters carved on a stone beneath them: <b>樱花为证</b>, &quot;cherry blossoms as witness&quot;. In the next six minutes I&#x27;ll show what these trees witness, how I built a <b>digital twin</b> of one of them, and how AR lets us see it in <b>every season</b>.</aside>
+  <aside class="notes" data-t="0:30">Good morning. Our project is about a tree you&#x27;ve probably walked past many times: the <b>cherry trees on Aixiao Road</b>. Our title comes from four characters carved on a stone beneath them: <b>樱花为证</b>, &quot;cherry blossoms as witness&quot;. We&#x27;ll show what these trees witness, how we read their <b>site</b>, how we built a <b>digital twin</b> of one of them, and how AR lets us see it in <b>every season</b>.</aside>
 </section>
 
 <!-- 02 · SITE -->
 <section class="slide" id="s2">
   <div class="left">
-    <div class="kicker"><b>01</b>The object · 遗产对象</div>
+    <div class="kicker"><b>02</b>The object · 遗产对象</div>
     <h2>It is November.<br>The tree is <em>bare</em>.</h2>
-    <p class="lead" style="margin-top:26px">Sakura Avenue blooms for about two weeks a year. For the other fifty, its meaning is invisible. That gap is my design problem.</p>
+    <p class="lead" style="margin-top:26px">Sakura Avenue blooms for about two weeks a year. For the other fifty, its meaning is invisible. That gap is our design problem.</p>
   </div>
-  <svg class="plan" viewBox="0 0 820 600" aria-label="Schematic plan of Aixiao Road">
-    <defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#5f7d5a" stroke-width="1" opacity=".35"/></pattern></defs>
-    <rect x="0" y="0" width="820" height="600" fill="none"/>
-    <!-- road -->
-    <path d="M40 330 L780 250" stroke="#1d2621" stroke-width="44" stroke-opacity=".07" fill="none"/>
-    <path d="M40 330 L780 250" stroke="#1d2621" stroke-width="1" stroke-dasharray="6 7" fill="none" opacity=".5"/>
-    <g id="treesN"></g><g id="treesS"></g>
-    <!-- sanhao wu -->
-    <path d="M520 400 q40 -18 92 4 q48 22 34 66 q-14 40 -78 36 q-62 -4 -70 -48 q-6 -40 22 -58z" fill="url(#hatch)" stroke="#5f7d5a" stroke-opacity=".5"/>
-    <text x="600" y="540" font-family="Noto Serif SC,serif" font-size="15" fill="#47524b" text-anchor="middle">三好坞 Sanhao Wu</text>
-    <!-- stone -->
-    <g transform="translate(300 336)"><rect x="-9" y="-6" width="18" height="12" fill="#c45f84"/><line x1="0" y1="6" x2="0" y2="70" stroke="#c45f84"/><text x="0" y="92" font-family="JetBrains Mono,monospace" font-size="12" fill="#c45f84" text-anchor="middle">MEMORIAL STONE · 1997</text></g>
-    <!-- twin tree -->
-    <g transform="translate(470 252)"><circle r="20" fill="none" stroke="#1d2621" stroke-width="1.2"/><circle r="4" fill="#1d2621"/><line x1="0" y1="-20" x2="0" y2="-82" stroke="#1d2621"/><text x="0" y="-92" font-family="JetBrains Mono,monospace" font-size="12" fill="#1d2621" text-anchor="middle">DIGITAL-TWIN TREE</text></g>
-    <text x="60" y="380" font-family="Noto Serif SC,serif" font-size="17" fill="#1d2621" transform="rotate(-6.2 60 380)">爱校路 Aixiao Road</text>
-    <!-- north + scale -->
-    <g transform="translate(760 60)"><path d="M0 -26 L9 8 L0 2 L-9 8z" fill="#1d2621"/><text y="28" font-family="JetBrains Mono,monospace" font-size="12" text-anchor="middle" fill="#1d2621">N</text></g>
-    <text x="40" y="590" font-family="JetBrains Mono,monospace" font-size="11.5" fill="#8b9087">SCHEMATIC PLAN · NOT TO SCALE · SIPING CAMPUS</text>
-  </svg>
+  <figure class="plan fit"><img class="mul" src="assets/add/plan-campus.png" alt="CAD location plan of the Aixiao Road cherry grove, Siping campus"></figure>
+  <div class="cap">CAD-BASED LOCATION PLAN · SIPING CAMPUS · INDICATIVE SCALE</div>
   <div class="stats">
     <div class="stat"><div class="k">Character</div><div class="v">Avenue</div><div class="d">Paired rows of cherry trees forming a linear, seasonal corridor</div></div>
     <div class="stat"><div class="k">Scale · 1997 → now</div><div class="v">100<small>→ 200+</small></div><div class="d">Gifted saplings in 1997; 200+ trees reported blooming in 2023</div></div>
-    <div class="stat"><div class="k">Complexity</div><div class="v">1,622<small>axes</small></div><div class="d">Branch axes reconstructed on a single sample tree</div></div>
+    <div class="stat"><div class="k">Study corridor</div><div class="v">33<small>trees</small></div><div class="d">18 on the tennis-court side + 15 on the football-field side</div></div>
     <div class="stat"><div class="k">Scope</div><div class="v">1 + <small>setting</small></div><div class="d">One tree as twin, the avenue and stone as its context</div></div>
   </div>
-  <aside class="notes" data-t="0:30">Today is November, and the trees outside are <b>bare</b>. Sakura Avenue blooms for about two weeks a year. For the other fifty, its meaning is invisible. That gap is my design problem.<br>The avenue began with about <b>100 saplings in 1997</b> and has grown to <b>more than 200 trees</b>. My scope is <b>one sample tree</b> as the twin, with the avenue and the memorial stone as its setting.</aside>
+  <aside class="notes" data-t="0:30">Today is November, and the trees outside are <b>bare</b>. Sakura Avenue blooms for about two weeks a year. For the other fifty, its meaning is invisible. That gap is our design problem.<br>The avenue began with about <b>100 saplings in 1997</b> and has grown to <b>more than 200 trees</b>. On this campus plan, our study corridor is the pink strip: <b>33 trees</b>, with <b>one sample tree</b> as the twin.</aside>
 </section>
 
 <!-- 03 · TIMELINE -->
 <section class="slide" id="s3">
   <div class="head">
-    <div><div class="kicker"><b>02</b>History · 历史溯源</div><h2>A gift, a deadline,<br>and a <em>domestic</em> substitute.</h2></div>
+    <div><div class="kicker"><b>03</b>History · 历史溯源</div><h2>A gift, a deadline,<br>and a <em>domestic</em> substitute.</h2></div>
     <p class="lead" style="max-width:470px">The school archives hold almost nothing on the trees. Their story survives in newspapers, alumni newsletters and oral history.</p>
   </div>
   <div class="tl">
@@ -344,13 +481,13 @@ body.print .slide{transition:none!important}
     <div class="ev" style="left:1000px"><div class="y">2019<small>APR</small></div><p>Former dean Xuan Guorong, who signed the 1996 deal, is interviewed beneath "his" trees.</p></div>
     <div class="ev key" style="left:1250px;width:158px"><div class="y">2026</div><p>Digital twin and four-season AR of one sample tree.</p></div>
   </div>
-  <div class="foot"><span>Sources: People's Daily 1997-05-18 · Tongji News 2014 / 2019 · CCF-CV interview 2022 · Shanghai Gov. 2023</span><span>02 / History</span></div>
-  <aside class="notes" data-t="0:35">The school archives had almost nothing on these trees, so I rebuilt their history from <b>newspapers, alumni newsletters and oral history</b>.<br>In 1996, the School of Computer Science partnered with the Japanese company <b>CSK</b>. For Tongji&#x27;s <b>90th anniversary</b> in 1997, CSK gifted 100 cherry trees. One detail surprised me: importing them from Japan would have missed the anniversary, so the saplings were actually <b>bought in China</b>. They were planted on <b>20 May 1997</b>.</aside>
+  <div class="foot"><span>Sources: People's Daily 1997-05-18 · Tongji News 2014 / 2019 · CCF-CV interview 2022 · Shanghai Gov. 2023</span><span>03 / History</span></div>
+  <aside class="notes" data-t="0:35">The school archives had almost nothing on these trees, so we rebuilt their history from <b>newspapers, alumni newsletters and oral history</b>.<br>In 1996, the School of Computer Science partnered with the Japanese company <b>CSK</b>. For Tongji&#x27;s <b>90th anniversary</b> in 1997, CSK gifted 100 cherry trees. One detail surprised us: importing them from Japan would have missed the anniversary, so the saplings were actually <b>bought in China</b>. They were planted on <b>20 May 1997</b>.</aside>
 </section>
 
 <!-- 04 · STONE -->
 <section class="slide dark" id="s4">
-  <div class="kicker"><b>03</b>The inscription · 碑文</div>
+  <div class="kicker"><b>04</b>The inscription · 碑文</div>
   <div class="photo"><img src="assets/feishu/stone.png" alt="Memorial stone, 1997"></div>
   <div class="verse">
     <div class="col">樱花为证</div>
@@ -366,7 +503,7 @@ body.print .slide{transition:none!important}
 
 <!-- 05 · MEMORY -->
 <section class="slide" id="s5">
-  <div class="kicker" style="position:absolute;left:96px;top:72px"><b>04</b>Living memory · 校园记忆</div>
+  <div class="kicker" style="position:absolute;left:96px;top:72px"><b>05</b>Living memory · 校园记忆</div>
   <div class="q">
     <blockquote>These trees are like my children. Every spring I come back to see how they have grown.</blockquote>
     <p class="cnq">“这些樱花树就像是我的孩子，每年这个时间，我都要来这里看看。”</p>
@@ -383,10 +520,83 @@ body.print .slide{transition:none!important}
   <aside class="notes" data-t="0:30">And people keep coming back. The former dean who signed the 1996 agreement says: &quot;<b>These trees are like my children.</b>&quot; He visits every spring. Here he is with his wife in 2024.<br>In 2014, a retired couple photographed seven graduates under the blossoms and wrote to the university to find them. A Weibo post found them <b>within two hours</b>. The avenue has become a stage for graduation, return and kindness.</aside>
 </section>
 
+<!-- SITE · GROVE PLAN -->
+<section class="slide" id="grove">
+  <div class="hd" style="width:460px">
+    <div class="kicker"><b>06</b>Site · 场地平面</div>
+    <h2>Thirty-three trees,<br>one <em>corridor</em>.</h2>
+  </div>
+  <div class="facts">
+    <div><b>18</b><p><strong>Tennis-court side</strong>, R01–R18, at about 5 m centres, so about 85 m from first to last stem.</p></div>
+    <div><b>15</b><p><strong>Football-field side</strong>, L01–L15. The spacing here has not been measured yet.</p></div>
+    <div><b>12.5<small>m</small></b><p>Between the two tree-row axes, read from the campus CAD drawing.</p></div>
+  </div>
+  <figure class="plan fit"><img class="mul" src="assets/add/plan-grove.png" alt="CAD grove plan with study tree T01"></figure>
+  <div class="t01"><b>STUDY TREE · T01</b><p>Our digital twin is <b>R01</b>, the first tree on the tennis-court side, at the Nan Avenue end of the grove.</p></div>
+  <div class="cap">CAD-BASED GROVE PLAN (同济大学含植物.dxf) · TREE SYMBOLS ARE NOT MEASURED CROWNS · COUNTS FROM OUR FIELD SURVEY</div>
+  <aside class="notes" data-t="0:35">Now we zoom in from the campus to the grove. We counted <b>33 trees</b> in our study corridor: <b>18</b> on the tennis-court side and <b>15</b> on the football-field side. On the tennis-court side they stand about <b>5 metres</b> apart, so the row runs for about <b>85 metres</b>. The two rows are about <b>12.5 metres</b> apart, measured from the campus CAD drawing.<br>The tree we modelled is <b>T01</b>, the first tree of the right-hand row, near Nan Avenue.</aside>
+</section>
+
+<!-- SITE · SECTION -->
+<section class="slide" id="section">
+  <div class="hd" style="width:960px">
+    <div class="kicker"><b>07</b>Site · 空间关系</div>
+    <h2>A street <em>beneath</em> the trees.</h2>
+  </div>
+  <svg class="sec" viewBox="0 0 960 420" aria-label="Analytical cross-section A-A">
+    <rect x="40" y="310" width="140" height="8" fill="#a7b89a"/><rect x="180" y="310" width="38" height="8" fill="#8fa883"/>
+    <rect x="218" y="310" width="84" height="8" fill="#e3dccb"/><rect x="302" y="310" width="300" height="8" fill="#d6d2c8"/>
+    <rect x="602" y="310" width="80" height="8" fill="#e3dccb"/><rect x="682" y="310" width="180" height="8" fill="#8fa883"/>
+    <line x1="20" y1="310" x2="900" y2="310" stroke="#1d2621" stroke-width="1.3"/>
+    <g stroke="#8b9087" stroke-width="1"><line x1="60" y1="230" x2="60" y2="310"/><line x1="95" y1="230" x2="95" y2="310"/><line x1="130" y1="230" x2="130" y2="310"/><line x1="60" y1="240" x2="130" y2="240"/><line x1="60" y1="270" x2="130" y2="270"/></g>
+    <circle cx="64" cy="100" r="41" fill="#f2c4d3" fill-opacity=".42"/><circle cx="93" cy="162" r="33" fill="#f2c4d3" fill-opacity=".42"/><circle cx="53" cy="128" r="31" fill="#f2c4d3" fill-opacity=".42"/><circle cx="55" cy="110" r="36" fill="#f2c4d3" fill-opacity=".42"/><circle cx="108" cy="158" r="33" fill="#f2c4d3" fill-opacity=".42"/><circle cx="260" cy="97" r="30" fill="#f2c4d3" fill-opacity=".42"/><circle cx="180" cy="122" r="37" fill="#f2c4d3" fill-opacity=".42"/><circle cx="243" cy="68" r="31" fill="#f2c4d3" fill-opacity=".42"/><circle cx="89" cy="124" r="43" fill="#f2c4d3" fill-opacity=".42"/><circle cx="165" cy="140" r="30" fill="#f2c4d3" fill-opacity=".42"/><circle cx="118" cy="136" r="42" fill="#f2c4d3" fill-opacity=".42"/><circle cx="288" cy="82" r="38" fill="#f2c4d3" fill-opacity=".42"/><circle cx="121" cy="143" r="38" fill="#f2c4d3" fill-opacity=".42"/><circle cx="257" cy="141" r="46" fill="#f2c4d3" fill-opacity=".42"/><circle cx="190" cy="152" r="33" fill="#f2c4d3" fill-opacity=".42"/><circle cx="314" cy="85" r="41" fill="#f2c4d3" fill-opacity=".42"/><circle cx="319" cy="133" r="34" fill="#f2c4d3" fill-opacity=".42"/><circle cx="298" cy="155" r="41" fill="#f2c4d3" fill-opacity=".42"/><path d="M200 310 L200 222 M200 232 L130 150 M200 226 L280 140 M200 222 L190 110 M160 186 L75 160 M246 180 L330 170" stroke="#3d4a42" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="638" cy="107" r="31" fill="#f2c4d3" fill-opacity=".42"/><circle cx="756" cy="68" r="30" fill="#f2c4d3" fill-opacity=".42"/><circle cx="815" cy="144" r="41" fill="#f2c4d3" fill-opacity=".42"/><circle cx="723" cy="119" r="29" fill="#f2c4d3" fill-opacity=".42"/><circle cx="808" cy="136" r="30" fill="#f2c4d3" fill-opacity=".42"/><circle cx="659" cy="122" r="43" fill="#f2c4d3" fill-opacity=".42"/><circle cx="783" cy="79" r="30" fill="#f2c4d3" fill-opacity=".42"/><circle cx="606" cy="151" r="34" fill="#f2c4d3" fill-opacity=".42"/><circle cx="808" cy="157" r="37" fill="#f2c4d3" fill-opacity=".42"/><circle cx="616" cy="144" r="44" fill="#f2c4d3" fill-opacity=".42"/><circle cx="608" cy="103" r="36" fill="#f2c4d3" fill-opacity=".42"/><circle cx="677" cy="153" r="43" fill="#f2c4d3" fill-opacity=".42"/><circle cx="569" cy="155" r="39" fill="#f2c4d3" fill-opacity=".42"/><circle cx="601" cy="104" r="45" fill="#f2c4d3" fill-opacity=".42"/><circle cx="641" cy="70" r="45" fill="#f2c4d3" fill-opacity=".42"/><circle cx="759" cy="90" r="31" fill="#f2c4d3" fill-opacity=".42"/><circle cx="710" cy="82" r="40" fill="#f2c4d3" fill-opacity=".42"/><circle cx="563" cy="132" r="43" fill="#f2c4d3" fill-opacity=".42"/><path d="M690 310 L690 222 M690 232 L620 150 M690 226 L770 140 M690 222 L680 110 M650 186 L565 160 M736 180 L820 170" stroke="#3d4a42" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <rect x="752" y="272" width="62" height="38" rx="6" fill="#7f9a74" fill-opacity=".8"/><rect x="820" y="282" width="40" height="28" rx="5" fill="#5f7d5a" fill-opacity=".7"/>
+    <rect x="708" y="292" width="34" height="5" fill="#a28566"/><line x1="712" y1="297" x2="712" y2="310" stroke="#a28566" stroke-width="2"/><line x1="738" y1="297" x2="738" y2="310" stroke="#a28566" stroke-width="2"/>
+    <g stroke="#1d2621" stroke-width="2.4" fill="none" stroke-linecap="round"><circle cx="255" cy="252" r="7" fill="#1d2621" stroke="none"/><path d="M255 260 L255 285 M255 285 L247 309 M255 285 L263 309 M245 272 L255 266 L265 274"/></g><g stroke="#1d2621" stroke-width="2.4" fill="none" stroke-linecap="round"><circle cx="640" cy="252" r="7" fill="#1d2621" stroke="none"/><path d="M640 260 L640 285 M640 285 L632 309 M640 285 L648 309 M630 272 L640 266 L650 274"/></g>
+    <g stroke="#c45f84" stroke-width="2.2" fill="none"><circle cx="418" cy="296" r="13"/><circle cx="462" cy="296" r="13"/><path d="M418 296 L436 274 L462 296 M436 274 L452 274 M436 274 L440 262"/><circle cx="442" cy="246" r="6.5" fill="#c45f84" stroke="none"/><path d="M442 253 L438 268 L452 274"/></g>
+    <g font-family="Inter,sans-serif" font-size="13.5" fill="#47524b" text-anchor="middle"><text x="110" y="342">Sports edge</text><text x="260" y="342">Walk</text><text x="452" y="342">Shared road · 骑行与步行</text><text x="642" y="342">Walk</text><text x="800" y="342">Shrubs · benches</text></g>
+    <g stroke="#1d2621" stroke-width="1"><line x1="200" y1="372" x2="690" y2="372"/><line x1="200" y1="364" x2="200" y2="380"/><line x1="690" y1="364" x2="690" y2="380"/></g>
+    <text x="445" y="398" font-family="JetBrains Mono,monospace" font-size="12.5" fill="#1d2621" text-anchor="middle">≈ 12.5 m between CAD tree-row axes</text>
+    <text x="445" y="40" font-family="Cormorant Garamond,serif" font-style="italic" font-size="24" fill="#c45f84" text-anchor="middle">In spring the two crowns almost meet over the road</text>
+    <text x="20" y="418" font-family="JetBrains Mono,monospace" font-size="10.5" fill="#8b9087">A–A · ANALYTICAL SECTION · HEIGHTS, WIDTHS AND LEVELS ARE SCHEMATIC</text>
+  </svg>
+  <div class="reads">
+    <div><b>LINEAR SPACE</b><p>Two paired rows turn an ordinary campus road into a corridor.</p></div>
+    <div><b>SHARED MOVEMENT</b><p>Walking and cycling share the centre, under the canopy.</p></div>
+    <div><b>EDGE PAUSE</b><p>Shrubs and benches at the edges let people stop and look up.</p></div>
+  </div>
+  <figure class="ph"><img src="assets/add/corridor.jpg" alt="Aixiao Road corridor, people walking and cycling"></figure>
+  <figcaption>Field photo · Aixiao Road in early spring. Movement readings are qualitative; no traffic counts are claimed.</figcaption>
+  <aside class="notes" data-t="0:30">This is section A–A across the corridor. The two rows of cherries turn an ordinary road into a <b>linear space</b>. Walkers and cyclists <b>share the centre</b>, and in spring the two crowns almost <b>meet over the road</b>. At the edges, shrubs and benches give people a place to <b>pause</b>.<br>This is a qualitative reading from the CAD drawing and our photos. We did not count traffic, and the heights in the section are schematic.</aside>
+</section>
+
+<!-- SITE · PLANTING -->
+<section class="slide" id="plants">
+  <figure class="ph"><img src="assets/add/planting.jpg" alt="Planting layers under the cherry trees"></figure>
+  <figcaption>Field photo · canopy, shrub and ground layers along the avenue</figcaption>
+  <div class="hd">
+    <div class="kicker"><b>08</b>Site · 植物群落</div>
+    <h2>Three layers <em>under</em> one canopy.</h2>
+  </div>
+  <div class="lays">
+    <div class="lay" style="border-color:#eba9c0"><div class="t">CANOPY · 乔木层</div><h3>Cherry</h3><ul><li>Japanese early cherry<i>日本早樱 · per tree label</i></li></ul></div>
+    <div class="lay" style="border-color:#5f7d5a"><div class="t">SHRUB · 灌木层</div><h3>Evergreen</h3><ul><li>Euonymus japonicus<i>冬青卫矛</i></li><li>Viburnum odoratissimum<i>珊瑚树 · hedge on both sides</i></li></ul></div>
+    <div class="lay" style="border-color:#a7b89a"><div class="t">GROUND · 地被层</div><h3>Herbaceous</h3><ul><li>Ophiopogon japonicus<i>麦冬</i></li><li>Orychophragmus violaceus<i>诸葛菜 · purple in spring</i></li></ul></div>
+  </div>
+  <svg class="rhythm" viewBox="0 0 864 190" aria-label="Tree-row rhythm">
+    <text x="60" y="22" font-family="JetBrains Mono,monospace" font-size="11.5" letter-spacing="1.5" fill="#c45f84">TENNIS-COURT SIDE · 18 TREES · ≈ 5 m CENTRES · ≈ 85 m</text>
+    <line x1="24" y1="62" x2="847" y2="62" stroke="#1d2621" stroke-opacity=".25"/><circle cx="24.0" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="24.0" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R01</text><circle cx="72.4" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="72.4" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R02</text><circle cx="120.8" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="120.8" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R03</text><circle cx="169.2" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="169.2" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R04</text><circle cx="217.6" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="217.6" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R05</text><circle cx="266.0" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="266.0" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R06</text><circle cx="314.4" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="314.4" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R07</text><circle cx="362.8" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="362.8" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R08</text><circle cx="411.2" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="411.2" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R09</text><circle cx="459.6" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="459.6" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R10</text><circle cx="508.0" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="508.0" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R11</text><circle cx="556.4" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="556.4" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R12</text><circle cx="604.8" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="604.8" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R13</text><circle cx="653.2" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="653.2" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R14</text><circle cx="701.6" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="701.6" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R15</text><circle cx="750.0" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="750.0" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R16</text><circle cx="798.4" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="798.4" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R17</text><circle cx="846.8" cy="62" r="13" fill="#eba9c0" fill-opacity=".6" stroke="#c45f84" stroke-opacity=".6"/><text x="846.8" y="92" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">R18</text>
+    <circle cx="24" cy="62" r="19" fill="none" stroke="#c45f84" stroke-width="1.6"/><text x="24" y="30" font-size="11" text-anchor="middle" fill="#c45f84" font-family="JetBrains Mono,monospace" font-weight="500">T01</text>
+    <text x="0" y="118" font-family="JetBrains Mono,monospace" font-size="11.5" letter-spacing="1.5" fill="#8b9087">FOOTBALL-FIELD SIDE · 15 TREES · SPACING NOT MEASURED</text>
+    <line x1="24" y1="140" x2="844" y2="140" stroke="#1d2621" stroke-opacity=".18" stroke-dasharray="4 5"/><circle cx="24.0" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="24.0" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L01</text><circle cx="82.6" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="82.6" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L02</text><circle cx="141.2" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="141.2" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L03</text><circle cx="199.8" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="199.8" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L04</text><circle cx="258.4" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="258.4" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L05</text><circle cx="317.0" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="317.0" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L06</text><circle cx="375.6" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="375.6" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L07</text><circle cx="434.2" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="434.2" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L08</text><circle cx="492.8" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="492.8" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L09</text><circle cx="551.4" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="551.4" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L10</text><circle cx="610.0" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="610.0" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L11</text><circle cx="668.6" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="668.6" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L12</text><circle cx="727.2" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="727.2" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L13</text><circle cx="785.8" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="785.8" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L14</text><circle cx="844.4" cy="140" r="13" fill="#eba9c0" fill-opacity=".35" stroke="#c45f84" stroke-opacity=".45"/><text x="844.4" y="170" font-size="10" text-anchor="middle" fill="#8b9087" font-family="JetBrains Mono,monospace">L15</text>
+  </svg>
+  <aside class="notes" data-t="0:30">Under the cherries there are <b>three planting layers</b>. The canopy is the cherry itself. Below it is an <b>evergreen shrub layer</b>, with Euonymus and a Viburnum hedge on both sides. On the ground there is <b>Ophiopogon</b>, and <b>Orychophragmus</b>, which flowers purple at the same time as the cherries.<br>At the bottom is the <b>rhythm</b> of the rows: 18 trees at even spacing on one side, 15 on the other. Plant names come from our field report and the tree label; they are not botanically verified.</aside>
+</section>
+
 <!-- 06 · SIGNIFICANCE -->
 <section class="slide" id="s6">
   <div class="head">
-    <div class="kicker"><b>05</b>Significance assessment · 价值评估</div>
+    <div class="kicker"><b>09</b>Significance assessment · 价值评估</div>
     <h2>Four values, <em>one</em> avenue.</h2>
     <p class="lead" style="margin-top:18px;max-width:820px">Following the Burra Charter's categories of cultural significance, applied to a living landscape element.</p>
   </div>
@@ -397,48 +607,170 @@ body.print .slide{transition:none!important}
     <div class="val"><div class="n">04</div><h3>Scientific<span>科学</span></h3><p>A living record of growth since a known 1997 planting date, and a baseline for phenology and tree-health monitoring.</p><div class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><div class="ev2">29 years of growth · digital baseline</div></div>
   </div>
   <div class="flag"><b>OPEN QUESTION</b><p>Sources disagree on the species: a 2023 city report says <b>Somei Yoshino</b> (染井吉野), but the tree's label reads <b>日本早樱 · Prunus subhirtella</b>. Verifying the species is the next step of fieldwork.</p></div>
-  <aside class="notes" data-t="0:35">To assess significance, I used the <b>Burra Charter&#x27;s</b> four values.<br><b>Historic</b> value is strongest: the avenue is dated, documented and inscribed. <b>Social</b> value is equally strong, because people renew its meaning every spring. <b>Aesthetic</b> value is high but brief. <b>Scientific</b> value is emerging: with a known planting date, the trees are a baseline for monitoring.<br>One honest finding: the sources <b>disagree on the species</b>. A city report says Somei Yoshino, but the label on the tree reads <b>日本早樱</b>, Prunus subhirtella. I leave this open for fieldwork.</aside>
+  <aside class="notes" data-t="0:35">To assess significance, we used the <b>Burra Charter&#x27;s</b> four values.<br><b>Historic</b> value is strongest: the avenue is dated, documented and inscribed. <b>Social</b> value is equally strong, because people renew its meaning every spring. <b>Aesthetic</b> value is high but brief. <b>Scientific</b> value is emerging: with a known planting date, the trees are a baseline for monitoring.<br>One honest finding: the sources <b>disagree on the species</b>. A city report says Somei Yoshino, but the label on the tree reads <b>日本早樱</b>, Prunus subhirtella. We leave this open for fieldwork.</aside>
 </section>
 
 <!-- 07 · WORKFLOW -->
 <section class="slide" id="s7">
   <div class="head">
-    <div class="kicker"><b>06</b>Digital twin · 数字孪生流程</div>
-    <h2>From photographs<br>to a <em>measurable</em> tree.</h2>
+    <div class="kicker"><b>10</b>Digital twin · 建模流程</div>
+    <h2>From a partial scan<br>to a <em>traceable</em> tree.</h2>
   </div>
   <div class="flow">
-    <div class="step"><div class="i">01 · CAPTURE</div><h3>Field survey<span>实地采集</span></h3><p>Photographs around the leafless trunk in winter, when branches are fully visible.</p><div class="tool">camera · photo scan</div></div>
-    <div class="step"><div class="i">02 · RECONSTRUCT</div><h3>Rhino model<span>枝干复原</span></h3><p>Trunk, forks and fine twigs rebuilt as mesh, keeping the bark's vertex colour.</p><div class="tool">Rhino · .3dm</div></div>
-    <div class="step"><div class="i">03 · STRUCTURE</div><h3>Branch axes<span>枝轴提取</span></h3><p>1,622 centre-lines extracted, so leaves and blossoms can grow on real twigs.</p><div class="tool">branches.json</div></div>
-    <div class="step"><div class="i">04 · SIMULATE</div><h3>Seasons<span>季相模拟</span></h3><p>9,500 leaves and 4,700 five-petal blossoms, instanced along the twigs.</p><div class="tool">Three.js · instancing</div></div>
-    <div class="step"><div class="i">05 · ANCHOR</div><h3>Web AR<span>校徽 AR</span></h3><p>The Tongji emblem is the image target. No app needed, and it works offline.</p><div class="tool">MindAR · glTF</div></div>
+    <div class="step"><div class="i">01 · CAPTURE</div><h3>Field data<span>现场资料</span></h3><p>A 3D scan mesh with bark colour, 8 photographs from different sides, and tape girths: 120 cm at the base, 60 cm on each stem.</p><div class="tool">.fbx · photos · tape</div></div>
+    <div class="step"><div class="i">02 · CLEAN</div><h3>Keep the scan<span>保留原扫描</span></h3><p>The surroundings are cropped away. 16,894 scanned triangles are kept untouched and checked vertex by vertex.</p><div class="tool">Rhino · rhino3dm</div></div>
+    <div class="step"><div class="i">03 · REPAIR</div><h3>Patch the gaps<span>缺面补修</span></h3><p>Holes in the root collar and broken limbs are filled from local cross-sections, on a layer of their own.</p><div class="tool">section rings</div></div>
+    <div class="step"><div class="i">04 · COMPLETE</div><h3>Rebuild the crown<span>枝系补全</span></h3><p>6 scan-fitted axes and 50 limbs read from photos, then 1,566 rule-based twigs and short shoots.</p><div class="tool">layered .3dm · 1,622 axes</div></div>
+    <div class="step"><div class="i">05 · PUBLISH</div><h3>Seasons + AR<span>季相与 AR</span></h3><p>A light GLB and the branch axes drive the seasons in Three.js and the emblem AR in MindAR.</p><div class="tool">glTF · Three.js · MindAR</div></div>
   </div>
-  <div class="nums"><span><b>437,947</b>triangles</span><span><b>6.92 m</b>height</span><span><b>7.47 × 8.56 m</b>crown span</span><span><b>12 MB</b>web model</span></div>
-  <aside class="notes" data-t="0:30">Here is the workflow. I captured the tree while it was <b>leafless</b>, so every branch was visible. I rebuilt the trunk and branches in <b>Rhino</b>, then extracted <b>1,622 branch centre-lines</b>.<br>That step matters: leaves and blossoms later grow on the <b>real twigs</b>, not at random. The result has about <b>440,000 triangles</b>, a height of <b>6.9 metres</b>, and a crown about <b>7.5 by 8.6 metres</b>, all in a 12-megabyte web model.</aside>
+  <div class="nums"><span><b>16,894</b>scanned triangles kept</span><span><b>437,947</b>triangles in total</span><span><b>1,622</b>branch axes</span><span><b>12 MB</b>web model</span></div>
+  <aside class="notes" data-t="0:40">Here is how we built the twin. We started from <b>three kinds of field data</b>: a 3D scan mesh of the trunk, <b>eight photographs</b>, and tape measurements of the girth.<br>The scan only captured the <b>lower part</b> of the tree, so we worked in layers. First, we <b>kept the scan untouched</b>: 16,894 triangles. Then we <b>patched</b> the holes from cross-sections. Then we <b>rebuilt the crown</b>: 6 axes fitted to the scan, 50 limbs read from photos, and about 1,500 twigs generated by rules. Finally, a light web model drives the <b>seasons and the AR</b>.</aside>
+</section>
+
+<!-- MODEL · LAYERS -->
+<section class="slide" id="layers">
+  <div class="hd" style="width:1100px">
+    <div class="kicker"><b>11</b>Reconstruction · 分层重建</div>
+    <h2>Five steps, from a stump of data to a <em>full</em> crown.</h2>
+  </div>
+  <figure class="stages fit"><img class="mul" src="assets/add/skeleton-stages.jpg" alt="Skeleton built in five stages"></figure>
+  <div class="stagelab"><span>a · raw scan</span><span>b · 6 scan-fitted axes</span><span>c · + 50 photo-read limbs</span><span>d · + 522 rule twigs</span><span>e · + 1,044 short shoots</span></div>
+  <div class="charts">
+    <div class="bars"><div class="ttl">Components · 构件数量</div>
+      <div class="r"><span>Scan-fitted axes</span><i style="width:1%;background:#5a6fc0"></i><span>6</span></div>
+      <div class="r"><span>Photo main limbs</span><i style="width:1.5%;background:#2a9d8f"></i><span>9</span></div>
+      <div class="r"><span>Photo secondary</span><i style="width:4%;background:#a35bc4"></i><span>41</span></div>
+      <div class="r"><span>Rule twigs</span><i style="width:50%;background:#e08a2e"></i><span>522</span></div>
+      <div class="r"><span>Rule short shoots</span><i style="width:100%;background:#d64e5f"></i><span>1,044</span></div>
+    </div>
+    <div class="bars"><div class="ttl">Summed axis length · 累计轴长 (m)</div>
+      <div class="r"><span>Scan-fitted axes</span><i style="width:8%;background:#5a6fc0"></i><span>14.0</span></div>
+      <div class="r"><span>Photo main limbs</span><i style="width:21%;background:#2a9d8f"></i><span>36.6</span></div>
+      <div class="r"><span>Photo secondary</span><i style="width:38%;background:#a35bc4"></i><span>66.7</span></div>
+      <div class="r"><span>Rule twigs</span><i style="width:100%;background:#e08a2e"></i><span>174.7</span></div>
+      <div class="r"><span>Rule short shoots</span><i style="width:61%;background:#d64e5f"></i><span>106.8</span></div>
+    </div>
+  </div>
+  <div class="call"><b>70.6%</b><p>of the summed axis length comes from <b>rule-generated</b> twigs. Any statistic about the fine crown says as much about our rules as about the tree.</p></div>
+  <aside class="notes" data-t="0:35">This slide shows the reconstruction step by step. On the left is all the scan gave us: the <b>trunk and a few limbs</b>. We then add 6 axes fitted to the scan, 50 limbs we read from the photographs, and finally about <b>1,500 twigs and shoots</b> generated by rules.<br>The bars are an honest warning. By count and by length, most of the crown is <b>rule-generated</b>: <b>70.6 percent</b> of the summed axis length. So the big structure is evidence, but the fine twigs are <b>interpretation</b>.</aside>
+</section>
+
+<!-- MODEL · EVIDENCE -->
+<section class="slide" id="evidence">
+  <div class="hd">
+    <div class="kicker"><b>12</b>Evidence layers · 证据分层</div>
+    <h2>Every branch says <em>where</em> it came from.</h2>
+  </div>
+  <div class="legend">
+    <div><i style="background:#3c5148"></i><div><b>Original scan<span>L1 原始扫描</span></b><p>Root collar, the twin stems and parts of the main limbs.</p></div></div>
+    <div><i style="background:#8aa38c"></i><div><b>Surface repair<span>L1 缺面修补</span></b><p>Holes filled from cross-sections of the scanned surface.</p></div></div>
+    <div><i style="background:#c48aa0"></i><div><b>Photo limbs<span>L2 照片逐枝</span></b><p>Main limbs traced branch by branch from the photographs.</p></div></div>
+    <div><i style="background:#c9b48a"></i><div><b>Secondary branches<span>L3 次枝</span></b><p>Smaller branches read from the photos where visible.</p></div></div>
+    <div><i style="background:#e6dbc4"></i><div><b>Rule-based twigs<span>L3 规则细梢</span></b><p>Fine twigs and shoots generated by rules, not observed.</p></div></div>
+  </div>
+  <figure class="fp"><img src="assets/add/field-photo.jpg" alt="Field photograph of T01"></figure>
+  <div class="lab" style="left:620px">FIELD PHOTOGRAPH · T01</div>
+  <figure class="md fit"><img class="mul" src="assets/add/evidence-model.png" alt="Model coloured by evidence layer"></figure>
+  <div class="lab" style="left:1000px">MODEL COLOURED BY SOURCE · 按来源着色</div>
+  <div class="principle"><p>Colour means <b>provenance</b>, not confidence. Following the <b>London Charter</b>, interpretation stays visible and separate from the record.</p></div>
+  <aside class="notes" data-t="0:30">Because so much is reconstructed, we kept <b>every source on its own layer</b>. Dark green is the <b>original scan</b>. Light green is <b>surface repair</b>. Pink limbs were <b>traced from photos</b>. The pale twigs are <b>generated by rules</b>.<br>On the left is the field photograph we compared against. The colours show <b>where each part came from</b>, not how accurate it is. This follows the <b>London Charter</b>: a heritage visualisation should keep its interpretation visible.</aside>
+</section>
+
+<!-- MODEL · ORTHO -->
+<section class="slide" id="ortho">
+  <div class="hd" style="width:1060px">
+    <div class="kicker"><b>13</b>Drawn record · 正投影图纸</div>
+    <h2>The twin as a set of <em>drawings</em>.</h2>
+  </div>
+  <div class="row">
+    <div><figure><img src="assets/add/ortho-xy.png" alt="Plan XY"></figure><div class="k">PLAN · XY</div><p>Span 7.47 m (X) × 8.56 m (Y)</p></div>
+    <div><figure><img src="assets/add/ortho-xz.png" alt="Elevation XZ"></figure><div class="k">ELEVATION · XZ</div><p>Highest model point Z = 6.87 m</p></div>
+    <div><figure><img src="assets/add/ortho-yz.png" alt="Elevation YZ"></figure><div class="k">ELEVATION · YZ</div><p>Viewed along the model X axis</p></div>
+  </div>
+  <div class="cuts">
+    <div class="k" style="margin-top:0">HORIZONTAL SECTIONS · 水平截面</div>
+    <div><figure><img src="assets/add/cut-026.png" alt="Section Z 0.26 m"></figure><p><b>Z = 0.26 m</b><br>Root collar: irregular, not round.</p></div>
+    <div><figure><img src="assets/add/cut-070.png" alt="Section Z 0.70 m"></figure><p><b>Z = 0.70 m</b><br>The trunk splits into two stems.</p></div>
+    <div><figure><img src="assets/add/cut-130.png" alt="Section Z 1.30 m"></figure><p><b>Z = 1.30 m</b><br>Two separate stems at breast height.</p></div>
+  </div>
+  <div class="note"><span><b>1 m</b>model units · metres</span><span><b>Z = 0</b>local ground reference</span><span>Axes are local model directions, not yet registered to north.</span></div>
+  <aside class="notes" data-t="0:30">A heritage record should also be <b>drawable</b>. These are direct projections of the model: a <b>plan</b> and two <b>elevations</b>. The crown spans about 7.5 by 8.6 metres, and the highest point is at 6.87 metres.<br>On the right are horizontal sections cut straight through the mesh. At ground level the root collar is <b>irregular</b>; by 70 centimetres the trunk has <b>split into two stems</b>. These are model readings, and the axes are not yet oriented to north.</aside>
+</section>
+
+<!-- MODEL · MEASURE -->
+<section class="slide" id="measure">
+  <div class="hd" style="width:1100px">
+    <div class="kicker"><b>14</b>Measurement ledger · 尺寸台账</div>
+    <h2>Measured, modelled, and <em>still unknown</em>.</h2>
+  </div>
+  <div class="ledger">
+    <div class="col"><div class="t">FIELD · TAPE</div><h3>Measured<span>现场实测</span></h3>
+      <div><span>Base girth</span><b>≈ 120 cm</b></div>
+      <div><span>→ equivalent diameter</span><b>38.2 cm</b></div>
+      <div><span>Each stem, mid-height</span><b>≈ 60 cm</b></div>
+      <div><span>→ equivalent diameter</span><b>19.1 cm</b></div></div>
+    <div class="col"><div class="t">MODEL · READING</div><h3>Modelled<span>模型读数</span></h3>
+      <div><span>Highest point</span><b>6.87 m</b></div>
+      <div><span>Span X × Y</span><b>7.47 × 8.56 m</b></div>
+      <div><span>Branch hull (Z ≥ 1.5 m)</span><b>33.21 m²</b></div>
+      <div><span>Hull centroid off the root</span><b>2.19 m</b></div></div>
+    <div class="col"><div class="t">TO SURVEY · 待补测</div><h3>Unknown<span>仍需测量</span></h3>
+      <div><span>True tree height</span><b>?</b></div>
+      <div><span>Crown spread, north-oriented</span><b>?</b></div>
+      <div><span>Diameter at 1.3 m (DBH)</span><b>?</b></div>
+      <div><span>Heights where girths were taken</span><b>?</b></div></div>
+  </div>
+  <figure class="strip fit"><img class="mul" src="assets/add/sections-a.jpg" alt="Scan points and fitted circles on stem A"></figure>
+  <figcaption class="cap">STEM A · SCAN POINTS AND FITTED CIRCLES AT Z ≈ 0.26 / 0.70 / 1.30 m · CENTRE OFFSETS 13.4 / 8.6 / 0.4 cm · D = C / π ASSUMES A ROUND TRUNK, WHICH IT IS NOT</figcaption>
+  <aside class="notes" data-t="0:35">We keep three columns apart. <b>Measured</b>: the base girth is about 120 centimetres, which gives an equivalent diameter of 38 centimetres. <b>Modelled</b>: the highest point is 6.87 metres, and the branch framework leans <b>2.19 metres</b> off the root, so the crown is strongly <b>asymmetric</b>.<br>And <b>unknown</b>: the true height, the crown spread oriented to north, and the standard diameter at breast height. At the bottom, the scan points of stem A show why: low down the trunk is <b>not round</b>, so a fitted circle is off by up to 13 centimetres.</aside>
+</section>
+
+<!-- MODEL · ANALYSIS -->
+<section class="slide" id="analysis">
+  <div class="hd" style="width:1100px">
+    <div class="kicker"><b>15</b>Structural analysis · 结构分析</div>
+    <h2>Reading the <em>architecture</em> of one tree.</h2>
+  </div>
+  <div class="tabs btn-row" id="anTabs">
+    <button class="chip" data-i="0" aria-pressed="true">1 · Orientation 方位</button>
+    <button class="chip" data-i="1">2 · Height 高度</button>
+    <button class="chip" data-i="2">3 · Density 密度</button>
+    <button class="chip" data-i="3">4 · Footprint 凸包</button>
+    <button class="chip" data-i="4">5 · Photo check 照片对照</button>
+  </div>
+  <div class="view">
+    <img class="on" src="assets/add/an-rose.jpg" alt="Orientation rose and elevation">
+    <img src="assets/add/an-height.jpg" alt="Axis length by height">
+    <img src="assets/add/an-density.jpg" alt="Projected axis density">
+    <img src="assets/add/an-hull.jpg" alt="Convex hull and eccentricity">
+    <img src="assets/add/photo-vs-model.jpg" alt="Field photo versus model">
+  </div>
+  <div class="side" id="anSide"></div>
+  <aside class="notes" data-t="0:45">With the axes in a table, we can analyse the tree&#x27;s architecture. <i style="color:#eba9c0">[1]</i> The <b>orientation rose</b>: branch length peaks in one sector, but the model is not oriented to north yet, so we make no claim about sunlight. <i style="color:#eba9c0">[2]</i> By <b>height</b>, most branch length sits between <b>3.5 and 4 metres</b>. <i style="color:#eba9c0">[3]</i> The <b>density maps</b> show where branches cluster and where there are gaps. <i style="color:#eba9c0">[4]</i> The <b>footprint</b> of the crown framework is 33 square metres, with its centre 2.2 metres off the trunk. <i style="color:#eba9c0">[5]</i> And we checked the main forks against <b>field photos</b> from similar angles.</aside>
 </section>
 
 <!-- 08 · TWIN EXPLORER -->
 <section class="slide dark" id="s8" data-3d="twin">
   <div class="stage3d"></div>
   <div class="side">
-    <div class="kicker"><b>07</b>Inside the twin · 模型解读</div>
+    <div class="kicker"><b>16</b>Inside the twin · 模型解读</div>
     <h2>Three ways<br>to <em>read</em> a tree.</h2>
     <div class="modes">
       <button class="mode" data-mode="mesh" aria-pressed="true"><span class="k">A</span><div><b>Surface</b><span>Bark mesh with original vertex colour</span></div></button>
       <button class="mode" data-mode="wire" aria-pressed="false"><span class="k">B</span><div><b>Wireframe</b><span>The geometric record, 437,947 triangles</span></div></button>
-      <button class="mode" data-mode="skeleton" aria-pressed="false"><span class="k">C</span><div><b>Skeleton</b><span><i style="color:var(--rose);font-style:normal">56 primary limbs</i> · 1,566 twig axes</span></div></button>
+      <button class="mode" data-mode="skeleton" aria-pressed="false"><span class="k">C</span><div><b>Skeleton</b><span><i style="color:var(--rose);font-style:normal">56 scan + photo limbs</i> · 1,566 rule twigs</span></div></button>
     </div>
     <p class="hint" style="margin-top:22px">DRAG TO ROTATE · SCROLL TO ZOOM · KEYS A / B / C</p>
   </div>
   <div class="dims"><b>6.92 m</b><br>HEIGHT · 树高<br><b>7.47 × 8.56 m</b><br>CROWN SPAN · 冠幅</div>
-  <aside class="notes" data-t="0:25"><i style="color:#eba9c0">[drag to rotate]</i> This is the twin, live.<br><i style="color:#eba9c0">[A]</i> The surface keeps the bark&#x27;s <b>original colour</b>. <i style="color:#eba9c0">[B]</i> The wireframe is the <b>geometric record</b>. <i style="color:#eba9c0">[C]</i> The skeleton: the pink lines are the <b>56 primary limbs</b>, and the dark lines are over <b>1,500 twigs</b>. This branching is <b>29 years of growth</b>, and it is the base the seasons are built on.</aside>
+  <aside class="notes" data-t="0:25"><i style="color:#eba9c0">[drag to rotate]</i> This is the twin, live.<br><i style="color:#eba9c0">[A]</i> The surface keeps the bark&#x27;s <b>original colour</b>. <i style="color:#eba9c0">[B]</i> The wireframe is the <b>geometric record</b>. <i style="color:#eba9c0">[C]</i> The skeleton: the pink lines are the <b>56 scan-fitted and photo-read limbs</b>, and the light lines are the <b>1,566 rule-based twigs</b>. This branching is <b>29 years of growth</b>, and it is the base the seasons are built on.</aside>
 </section>
 
 <!-- 09 · SEASONS -->
 <section class="slide dark" id="s9" data-3d="seasons" data-season="spring">
   <div class="stage3d"></div>
   <div class="side">
-    <div class="kicker"><b>08</b>Four seasons · 四季</div>
+    <div class="kicker"><b>17</b>Four seasons · 四季</div>
     <div class="sname" id="sname">Spring<span>春 · 一树花开</span></div>
     <p class="sdesc" id="sdesc"></p>
   </div>
@@ -453,13 +785,13 @@ body.print .slide{transition:none!important}
     </div>
     <label class="density">DENSITY <input type="range" id="density" min="0" max="100" value="75"><output id="dv">75%</output></label>
   </div>
-  <aside class="notes" data-t="0:35">It&#x27;s November, but with the twin I can <b>bring back spring</b>.<br><i style="color:#eba9c0">[2]</i> About <b>4,700 five-petal blossoms</b>, each placed on a real twig. <i style="color:#eba9c0">[3]</i> Summer: individual leaves. <i style="color:#eba9c0">[4]</i> Autumn: the leaves turn yellow and orange and thin out. <i style="color:#eba9c0">[5]</i> Winter: bare branches, which is what you&#x27;d see outside <b>today</b>.<br>To be clear about the method: the seasons are a <b>display simulation</b>, not measured phenology. <b>The structure is real. The seasons are interpretation.</b></aside>
+  <aside class="notes" data-t="0:35">It&#x27;s November, but with the twin we can <b>bring back spring</b>.<br><i style="color:#eba9c0">[2]</i> About <b>4,700 five-petal blossoms</b>, each placed on a twig axis. <i style="color:#eba9c0">[3]</i> Summer: individual leaves. <i style="color:#eba9c0">[4]</i> Autumn: the leaves turn yellow and orange and thin out. <i style="color:#eba9c0">[5]</i> Winter: bare branches, which is what you&#x27;d see outside <b>today</b>.<br>To be clear about the method: the seasons are a <b>display simulation</b>, not measured phenology. <b>The structure is evidence. The seasons are interpretation.</b></aside>
 </section>
 
 <!-- 10 · AR -->
 <section class="slide" id="s10">
   <div class="head">
-    <div class="kicker"><b>09</b>Augmented reality · 增强现实</div>
+    <div class="kicker"><b>18</b>Augmented reality · 增强现实</div>
     <h2>The emblem<br>is the <em>anchor</em>.</h2>
     <p class="lead" style="margin-top:22px">I chose the Tongji emblem as the AR target on purpose. The trees exist because of the university's 90th anniversary, so the university's own symbol summons them.</p>
   </div>
@@ -482,36 +814,84 @@ body.print .slide{transition:none!important}
     <img class="target" src="assets/emblem-target.jpg" alt="Emblem target">
     <div class="src" style="margin-top:8px">↑ IMAGE TARGET · 识别图</div>
   </div>
-  <aside class="notes" data-t="0:35">For AR, I made a deliberate choice: the image target is the <b>Tongji emblem</b>. The trees exist because of the university&#x27;s anniversary, so it felt right that the university&#x27;s own symbol <b>calls them back</b>.<br><i style="color:#eba9c0">[point to QR]</i> You can scan this now. It opens in the browser, with <b>no app to install</b>. Point it at the emblem, and the tree appears; then switch seasons on the spot.<br><i style="color:#eba9c0">[LIVE DEMO ≈ 15 s on phone. If it fails, keep talking over the phone mock-up on the slide.]</i></aside>
+  <aside class="notes" data-t="0:30">For AR, we made a deliberate choice: the image target is the <b>Tongji emblem</b>. The trees exist because of the university&#x27;s anniversary, so it felt right that the university&#x27;s own symbol <b>calls them back</b>.<br><i style="color:#eba9c0">[point to QR]</i> You can scan this now. It opens in the browser, with <b>no app to install</b>. Point it at the emblem, and the tree appears; then switch seasons on the spot.</aside>
+</section>
+
+<!-- AR · VIDEO -->
+<section class="slide dark" id="arvideo">
+  <div class="hd">
+    <div class="kicker"><b>19</b>AR in use · 实机演示</div>
+    <h2>On the phone, <em>in place</em>.</h2>
+    <p class="lead" style="margin-top:20px;max-width:470px">A screen recording of the web AR. The emblem is shown on a laptop screen, and the seasons are switched without leaving the camera.</p>
+  </div>
+  <div class="chap" id="chap">
+    <button data-t="0"><span>0:00</span><b>Open the page<i>把樱花的四季带到眼前</i></b></button>
+    <button data-t="3"><span>0:03</span><b>Emblem tracked · bare tree<i>识别校徽</i></b></button>
+    <button data-t="11"><span>0:11</span><b>Spring · blossom<i>春 · 花开</i></b></button>
+    <button data-t="17"><span>0:17</span><b>Summer · leaves<i>夏 · 叶繁</i></b></button>
+    <button data-t="26"><span>0:26</span><b>Autumn · colour<i>秋 · 叶染</i></b></button>
+    <button data-t="32"><span>0:32</span><b>Winter · bare branches<i>冬 · 休眠</i></b></button>
+  </div>
+  <div class="phone"><video id="arv" src="assets/add/ar-demo.mp4" poster="assets/add/ar-demo-poster.jpg" muted playsinline loop preload="metadata"></video></div>
+  <div class="obs">
+    <div><b>TRACKING</b><p>The tree stays anchored to the emblem as the phone moves, so it reads as standing on the target.</p></div>
+    <div><b>SEASONS IN PLACE</b><p>One tap switches the season. The same branch structure carries blossom, leaves, colour or nothing.</p></div>
+    <div><b>CONTROLS</b><p>Density and model-scale sliders, auto-rotate, and a camera-only mode for placing the tree by hand.</p></div>
+    <div><b>STILL TO TEST</b><p>Outdoor light, a printed emblem on site, and performance on older phones.</p></div>
+  </div>
+  <div class="vbar"><i id="vbar"></i></div>
+  <aside class="notes" data-t="0:35"><i style="color:#eba9c0">[video plays]</i> If the live demo is risky, this recording shows the same thing. We open the page, point the phone at the <b>emblem</b>, and the bare tree appears on it. Then we switch: <b>spring</b>, <b>summer</b>, <b>autumn</b>, <b>winter</b>, all without leaving the camera.<br>The tree stays <b>anchored</b> as the phone moves. What we still need to test is <b>outdoor light</b>, a printed emblem on site, and older phones.</aside>
 </section>
 
 <!-- 11 · INTERPRETATION -->
 <section class="slide" id="s11">
   <div class="head">
-    <div class="kicker"><b>10</b>Interpretation · 阐释策略</div>
+    <div class="kicker"><b>20</b>Interpretation · 阐释策略</div>
     <h2>Four layers of <em>time</em> in one tree.</h2>
   </div>
   <div class="layers">
     <div class="layer"><div class="t">LAYER 01 · 1997</div><h3>The Gift<span>赠礼</span></h3><p>The founding event, read through the stone, the newspapers and the 1996 agreement.</p><div class="how">ARCHIVE · INSCRIPTION</div></div>
     <div class="layer"><div class="t">LAYER 02 · EVERY SPRING</div><h3>The Ritual<span>花期</span></h3><p>The annual return of graduates, alumni and the dean who "raised" the trees.</p><div class="how">ORAL HISTORY · PHOTOS</div></div>
-    <div class="layer"><div class="t">LAYER 03 · 29 YEARS</div><h3>The Growth<span>生长</span></h3><p>The branching skeleton as the tree's own record of time, measured in 1,622 axes.</p><div class="how">DIGITAL TWIN · SKELETON</div></div>
+    <div class="layer"><div class="t">LAYER 03 · 29 YEARS</div><h3>The Growth<span>生长</span></h3><p>The branching skeleton as the tree's own record of time: 1,622 axes, each tagged with its source.</p><div class="how">DIGITAL TWIN · SKELETON</div></div>
     <div class="layer"><div class="t">LAYER 04 · ANY DAY</div><h3>The Witness<span>见证</span></h3><p>AR makes the meaning visible in any season. "Witness" stops being seasonal.</p><div class="how">WEB AR · EMBLEM ANCHOR</div></div>
   </div>
   <div class="principle"><span>Principle · 阐释原则</span><p><b>Real</b> structure. <b>Simulated</b> seasons. <b>Documented</b> stories. Every layer says which it is.</p></div>
-  <aside class="notes" data-t="0:30">To bring it together, I read the tree as <b>four layers of time</b>. <b>The gift</b>: one moment in 1997. <b>The ritual</b>: every spring. <b>The growth</b>: 29 years, recorded in the skeleton. <b>The witness</b>: any day, through AR.<br>My principle: <b>real structure, simulated seasons, documented stories</b>, and each layer says which one it is.</aside>
+  <aside class="notes" data-t="0:30">To bring it together, we read the tree as <b>four layers of time</b>. <b>The gift</b>: one moment in 1997. <b>The ritual</b>: every spring. <b>The growth</b>: 29 years, recorded in the skeleton. <b>The witness</b>: any day, through AR.<br>Our principle: <b>real structure, simulated seasons, documented stories</b>, and each layer says which one it is.</aside>
+</section>
+
+<!-- LIMITS -->
+<section class="slide" id="limits">
+  <div class="hd" style="width:1200px">
+    <div class="kicker"><b>21</b>Honest boundaries · 解释边界</div>
+    <h2>What the model can, and <em>cannot</em>, claim.</h2>
+  </div>
+  <table>
+    <tr><th>Model finding</th><th>What it supports</th><th>Still to check</th></tr>
+    <tr><td>The twin stems and main fork come from the scan</td><td>The lower structure has direct geometric evidence.</td><td>How well the full trunk matches the real tree.</td></tr>
+    <tr><td>Rule twigs are 70.6% of summed axis length</td><td>Crown statistics are sensitive to our rules.</td><td>The real number and spread of fine twigs.</td></tr>
+    <tr><td>The branch footprint is 2.19 m off-centre</td><td>The modelled crown is clearly asymmetric.</td><td>True crown spread and north orientation.</td></tr>
+    <tr><td>Low sections are off-centre to fitted circles</td><td>The trunk base is irregular, not round.</td><td>Non-circular profiles and scan gaps.</td></tr>
+    <tr><td>Every source is kept on its own layer</td><td>The model can be edited and traced.</td><td>Dimensional accuracy and AR performance.</td></tr>
+  </table>
+  <div class="prio">
+    <div><b>PRIORITY 1 · 尺度</b><p>Survey true height and ground level, crown spread in two directions with north, and girth heights.</p></div>
+    <div><b>PRIORITY 2 · 形态</b><p>Photograph hidden sides and key forks; re-cut irregular sections with real outlines.</p></div>
+    <div><b>PRIORITY 3 · 展示</b><p>Test AR on site and on older phones; simplify twigs for mobile.</p></div>
+  </div>
+  <aside class="notes" data-t="0:35">Before we close, we want to be clear about what this model <b>can and cannot claim</b>. The twin stems come from the scan, so they are <b>evidence</b>. But most of the fine crown is <b>rule-generated</b>, the crown is not yet oriented to north, and the trunk base is not round.<br>So our next fieldwork has priorities: first <b>scale</b>, meaning true height, crown spread and girth heights; then <b>form</b>, meaning photos of hidden sides; and only then the <b>display</b>. New evidence comes before more decorative leaves.</aside>
 </section>
 
 <!-- 12 · END -->
 <section class="slide dark" id="s12" data-3d="end">
   <div class="stage3d"></div>
   <div class="head">
-    <div class="kicker"><b>11</b>Reflection · 反思与展望</div>
-    <h2>What the twin<br><em>cannot</em> yet say.</h2>
+    <div class="kicker"><b>22</b>Reflection · 反思与展望</div>
+    <h2>Where it<br><em>goes</em> next.</h2>
   </div>
   <div class="lim">
     <div><b>SEASONS</b><p>Blossom and leaf data are a display simulation. Next, calibrate against phenology observations recorded each spring.</p></div>
     <div><b>SPECIES</b><p>Resolve the Somei Yoshino vs. Prunus subhirtella conflict with botanical verification.</p></div>
-    <div><b>SCOPE</b><p>Scale from one tree to the full avenue, and add an oral-history audio layer in AR.</p></div>
+    <div><b>SCOPE</b><p>Scale from T01 to all 33 trees in the corridor, then the whole avenue, and add an oral-history audio layer in AR.</p></div>
     <div><b>ARCHIVE</b><p>Institutional records were thin, so collect testimony from the 1997 generation while it is still possible.</p></div>
   </div>
   <div class="thanks">
@@ -519,7 +899,35 @@ body.print .slide{transition:none!important}
     <h1>Thank you.</h1>
     <p>QUESTIONS WELCOME · 欢迎提问</p>
   </div>
-  <aside class="notes" data-t="0:25">Finally, what the twin <b>cannot yet say</b>. The seasons need calibration with real <b>phenology data</b>. The species needs <b>botanical verification</b>. Next, I&#x27;d scale from one tree to the <b>whole avenue</b> and add these voices as an <b>audio layer</b> in AR.<br>The stone says <b>世代为继</b>, &quot;carried on through generations&quot;. A digital twin is one way to carry it on. <b>Thank you.</b></aside>
+  <aside class="notes" data-t="0:25">Where does it go next? The seasons need calibration with real <b>phenology data</b>. The species needs <b>botanical verification</b>. We&#x27;d scale from one tree to all <b>33 trees</b> in the corridor, then the avenue, and add these voices as an <b>audio layer</b> in AR.<br>The stone says <b>世代为继</b>, &quot;carried on through generations&quot;. A digital twin is one way to carry it on. <b>Thank you.</b></aside>
+</section>
+
+<!-- REFERENCES -->
+<section class="slide" id="refs">
+  <div class="hd">
+    <div class="kicker"><b>23</b>Appendix · 参考资料</div>
+    <h2>Sources and <em>methods</em>.</h2>
+  </div>
+  <div class="cols">
+    <div><h3>Heritage frameworks</h3><ul>
+      <li><b>Australia ICOMOS (2013).</b> The Burra Charter.</li>
+      <li><b>The London Charter (2009).</b> Computer-based Visualisation of Cultural Heritage, v2.1.</li>
+      <li><b>ICOMOS (1996).</b> Principles for the Recording of Monuments, Groups of Buildings and Sites.</li>
+      <li><b>Historic England (2017).</b> Photogrammetric Applications for Cultural Heritage.</li></ul></div>
+    <div><h3>Tree reconstruction</h3><ul>
+      <li><b>You, L. et al. (2023).</b> Tree Skeletonization with DBSCAN Clustering Using TLS Data. <i>Forests</i> 14(8), 1525.</li>
+      <li><b>Raumonen, P. et al. (2013).</b> Fast Automatic Precision Tree Models from TLS Data. <i>Remote Sensing</i> 5(2).</li>
+      <li><b>Fan, G. et al. (2021).</b> Low-cost Reconstruction of Tree Structure by AdQSM with Close-Range Photogrammetry. <i>Forests</i> 12(8), 1020.</li>
+      <li>Methods were used as references; the algorithms were not fully reproduced.</li></ul></div>
+    <div><h3>History &amp; site</h3><ul>
+      <li><b>People&#x27;s Daily</b>, 1997-05-18 · <b>《校友通讯》</b> No.1, 1997.</li>
+      <li><b>Tongji News</b>, 2014-04-18; 2019-04-15 《樱花树下忆当年》.</li>
+      <li><b>Shanghai Municipal Government</b>, 2023 cherry report.</li>
+      <li>Campus CAD 同济大学含植物.dxf · our field survey, photos and girth records.</li>
+      <li>Photo: Xiaohongshu @诺坎普の猫 (2024).</li></ul></div>
+  </div>
+  <div class="team">GROUP · 吕思扬 · 李欣芸 · 张弥月 · 李成蹊 · 唐家辉 · 卓虹礼 &nbsp;·&nbsp; TOOLS · Rhino / rhino3dm · Python · Three.js · MindAR</div>
+  <aside class="notes" data-t="0:00">Appendix: keep this slide up during questions.</aside>
 </section>
 
 </div></div>
@@ -555,6 +963,7 @@ function go(i){
   history.replaceState(null,'','#'+(cur+1));
   renderNotes();
   if(window.__tree)__tree.attach(slides[cur]);
+  const v=$('#arv');if(v){if(slides[cur].id==='arvideo'&&!PRINT){v.play().catch(()=>{});}else v.pause();}
 }
 addEventListener('keydown',e=>{
   if(e.target.tagName==='INPUT')return;
@@ -565,6 +974,7 @@ addEventListener('keydown',e=>{
   else if(k==='n'||k==='N'){const n=$('#notes');n.style.display=n.style.display==='block'?'none':'block';}
   else if(k==='t'||k==='T'){toggleTimer();}
   else if(k==='f'||k==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+  else if(slides[cur].id==='analysis'&&/^[1-5]$/.test(k))anShow(+k-1);
   else if(window.__tree)__tree.key(k,slides[cur]);
 });
 
@@ -572,16 +982,28 @@ addEventListener('keydown',e=>{
 function renderNotes(){const a=slides[cur].querySelector('aside.notes');$('#notes').innerHTML=a?`<div class="t">SLIDE ${cur+1} · TARGET ${a.dataset.t}</div>${a.innerHTML}`:'';}
 let t0=null,tid=null;
 function toggleTimer(){const el=$('#timer');if(tid){clearInterval(tid);tid=null;el.style.display='none';return;}
-  t0=Date.now();el.style.display='block';tid=setInterval(()=>{const s=Math.floor((Date.now()-t0)/1000);el.textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')} / 6:40`;el.classList.toggle('over',s>400);},250);}
+  t0=Date.now();el.style.display='block';tid=setInterval(()=>{const s=Math.floor((Date.now()-t0)/1000);el.textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')} / ${fmt(TOTAL)}`;el.classList.toggle('over',s>TOTAL);},250);}
+const TOTAL=$$('aside.notes').reduce((a,n)=>{const [m,x]=(n.dataset.t||'0:0').split(':');return a+(+m)*60+(+x);},0);
+function fmt(s){return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;}
 
 /* ---------- static decorations ---------- */
-(function plan(){const ns='http://www.w3.org/2000/svg';
-  for(const [gid,off] of [['treesN',-36],['treesS',36]]){const g=document.getElementById(gid);
-    for(let i=0;i<26;i++){const t=i/25,x=60+t*700,y=328-t*76+off+(gid==='treesN'?-t*0:0);
-      const c=document.createElementNS(ns,'circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',9+((i*7)%5));
-      c.setAttribute('fill','#eba9c0');c.setAttribute('fill-opacity',.55);c.setAttribute('stroke','#c45f84');c.setAttribute('stroke-opacity',.5);g.appendChild(c);}}
-})();
 (function qr(){try{const q=qrcode(0,'M');q.addData('https://tongji-sakura-ar.genialyew33.chatgpt.site/');q.make();$('#qr').innerHTML=q.createSvgTag({cellSize:4,margin:0,scalable:true});}catch(e){}})();
+/* analysis gallery */
+const AN=[
+  {big:'165–180°',h:'Orientation rose',p:'Branch length, binned in 15° sectors, peaks in one sector, and steep axes sit low in the crown.',lim:'Model axes are not yet registered to north, so no claim about sunlight or aspect.'},
+  {big:'3.5–4.0 m',h:'Length by height',p:'Most axis length, about 59 m, sits between 3.5 and 4.0 m: the spreading layer of the crown.',lim:'The peak is driven largely by rule-generated twigs.'},
+  {big:'0.25 m grid',h:'Projected density',p:'Axis length per m² in plan and two elevations shows where branches cluster and where the crown is open.',lim:'Not leaf area, biomass or light transmission.'},
+  {big:'33.21 m²',h:'Framework footprint',p:'The convex hull of axes above 1.5 m. Its centroid sits 2.19 m from the root, so the crown leans clearly to one side.',lim:'A geometric envelope, not crown cover or a centre of mass.'},
+  {big:'8 photos',h:'Photo check',p:'Root lean, the low twin stems, the main fork and long lateral limbs were compared with field photos from similar angles.',lim:'No camera calibration, so no branch-by-branch registration is claimed.'}
+];
+function anShow(i){$$('#anTabs .chip').forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));$$('#analysis .view img').forEach((im,j)=>im.classList.toggle('on',i===j));
+  const a=AN[i];$('#anSide').innerHTML=`<div class="big">${a.big}</div><h3>${a.h}</h3><p>${a.p}</p><div class="lim">LIMIT · ${a.lim}</div>`;}
+$$('#anTabs .chip').forEach(b=>b.onclick=()=>anShow(+b.dataset.i));anShow(0);
+/* AR video chapters */
+(function(){const v=$('#arv');if(!v)return;const bs=$$('#chap button');
+  bs.forEach(b=>b.onclick=()=>{v.currentTime=+b.dataset.t;v.play().catch(()=>{});});
+  v.addEventListener('timeupdate',()=>{const t=v.currentTime;let k=0;bs.forEach((b,i)=>{if(t>=+b.dataset.t)k=i;});bs.forEach((b,i)=>b.classList.toggle('on',i===k));
+    $('#vbar').style.width=(v.duration?t/v.duration*100:0)+'%';});})();
 (function months(){const m='JFMAMJJASOND'.split('');$('#months').innerHTML=m.map((c,i)=>`<i data-m="${i}">${c}</i>`).join('');})();
 
 /* ---------- petals on title ---------- */
