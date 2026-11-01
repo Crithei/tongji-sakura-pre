@@ -413,7 +413,11 @@ figure.fit img{object-fit:contain}
 /* ===== UI ===== */
 #ui{position:fixed;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.08);z-index:20}
 #progress{height:100%;background:var(--sakura);width:0;transition:width .5s ease}
-#counter{position:fixed;right:18px;bottom:12px;font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.35);z-index:20;letter-spacing:.1em}
+#counter{position:fixed;right:80px;bottom:14px;font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.35);z-index:20;letter-spacing:.1em}
+.pg{position:fixed;bottom:9px;z-index:21;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:rgba(20,26,23,.45);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.6);font:14px/1 var(--mono);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,opacity .2s}
+.pg:hover{background:var(--sakura);color:#1a211d;border-color:transparent}
+.pg.off{opacity:.25;pointer-events:none}
+#prev{right:44px}#next{right:14px}
 #timer{position:fixed;left:18px;bottom:12px;font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.45);z-index:20;display:none}
 #timer.over{color:#ff8fa8}
 #notes{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);width:min(1000px,92vw);max-height:38vh;overflow:auto;background:rgba(12,16,14,.94);color:#e8e2d6;padding:20px 26px;border-radius:12px;font-size:17px;line-height:1.6;z-index:30;display:none;border:1px solid rgba(255,255,255,.1)}
@@ -423,7 +427,7 @@ figure.fit img{object-fit:contain}
 #loader.done{opacity:0;pointer-events:none}
 #help{position:fixed;top:14px;right:18px;font-family:var(--mono);font-size:11.5px;color:rgba(255,255,255,.3);z-index:20}
 aside.notes{display:none}
-body.print #ui,body.print #counter,body.print #help,body.print #timer,body.print #notes{display:none!important}
+body.print #ui,body.print #counter,body.print .pg,body.print #help,body.print #timer,body.print #notes{display:none!important}
 body.print .slide{transition:none!important}
 </style>
 </head>
@@ -934,6 +938,8 @@ body.print .slide{transition:none!important}
 
 <div id="ui"><div id="progress"></div></div>
 <div id="counter"></div>
+<a class="pg" id="prev" href="#" title="Previous slide" aria-label="Previous slide">‹</a>
+<a class="pg" id="next" href="#" title="Next slide" aria-label="Next slide">›</a>
 <div id="timer"></div>
 <div id="notes"></div>
 <div id="help">← → navigate · N notes · T timer · F fullscreen</div>
@@ -960,11 +966,14 @@ function go(i){
   slides[cur].classList.remove('active');cur=i;slides[cur].classList.add('active');
   $('#progress').style.width=(cur/(slides.length-1)*100)+'%';
   $('#counter').textContent=String(cur+1).padStart(2,'0')+' / '+slides.length;
+  $('#prev').classList.toggle('off',cur===0);$('#next').classList.toggle('off',cur===slides.length-1);
   history.replaceState(null,'','#'+(cur+1));
   renderNotes();
   if(window.__tree)__tree.attach(slides[cur]);
   const v=$('#arv');if(v){if(slides[cur].id==='arvideo'&&!PRINT){v.play().catch(()=>{});}else v.pause();}
 }
+$('#prev').onclick=e=>{e.preventDefault();go(cur-1);};
+$('#next').onclick=e=>{e.preventDefault();go(cur+1);};
 addEventListener('keydown',e=>{
   if(e.target.tagName==='INPUT')return;
   const k=e.key;
