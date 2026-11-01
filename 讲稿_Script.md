@@ -4,9 +4,9 @@
 Group members: 吕思扬 · 李欣芸 · 张弥月 · 李成蹊 · 唐家辉 · 卓虹礼
 
 How to use the deck: open `index.html` (or the online link) and press **F** for fullscreen. Use **→ / Space** for the next slide, **N** to show these notes on screen, and **T** to start the timer (target 11:45).
-Live controls: slide 15 uses **1–5** to switch analysis figures. Slide 16 uses **A / B / C** to switch the model view. Slide 17 uses **1–5** to switch seasons. Slide 19 plays the AR recording; click a chapter to jump. **R** turns auto-rotate on and off.
+Live controls: slide 15 uses **1–5** to switch analysis figures. Slide 16 uses **A / B / C** to switch the model view. Slide 17 uses **1–5** to switch seasons. Slide 18 plays the AR recording; click a chapter to jump. Slide 19 is the QR code for the audience to try it. **R** turns auto-rotate on and off.
 
-> Total ≈ 1583 words of narration. **Bold** = stress. `[ ]` = action cue. Chinese lines are read in Chinese.
+> Total ≈ 1593 words of narration. **Bold** = stress. `[ ]` = action cue. Chinese lines are read in Chinese.
 > Suggested split for six speakers: Opening & history (01–05) · Site & significance (06–09) · Modelling (10–12) · Records & analysis (13–15) · Twin, seasons & AR (16–19) · Interpretation & close (20–23).
 
 ---
@@ -114,17 +114,18 @@ It's November, but with the twin we can **bring back spring**.
 `[2]` About **4,700 five-petal blossoms**, each placed on a twig axis. `[3]` Summer: individual leaves. `[4]` Autumn: the leaves turn yellow and orange and thin out. `[5]` Winter: bare branches, which is what you'd see outside **today**.
 To be clear about the method: the seasons are a **display simulation**, not measured phenology. **The structure is evidence. The seasons are interpretation.**
 
-## 18 · Augmented reality · 增强现实 — 0:30
-*The emblem is the anchor.*
-
-For AR, we made a deliberate choice: the image target is the **Tongji emblem**. The trees exist because of the university's anniversary, so it felt right that the university's own symbol **calls them back**.
-`[point to QR]` You can scan this now. It opens in the browser, with **no app to install**. Point it at the emblem, and the tree appears; then switch seasons on the spot.
-
-## 19 · AR in use · 实机演示 — 0:35
+## 18 · AR in use · 实机演示 — 0:35
 *On the phone, in place.*
 
-`[video plays]` If the live demo is risky, this recording shows the same thing. We open the page, point the phone at the **emblem**, and the bare tree appears on it. Then we switch: **spring**, **summer**, **autumn**, **winter**, all without leaving the camera.
-The tree stays **anchored** as the phone moves. What we still need to test is **outdoor light**, a printed emblem on site, and older phones.
+`[video plays]` First, here is the AR working on a phone. We open the page, point the camera at the **emblem**, and the bare tree appears on it. Then we switch: **spring**, **summer**, **autumn**, **winter**, all without leaving the camera.
+The tree stays **anchored** as the phone moves. What we still need to test is **outdoor light**, a printed emblem on site, and older phones. And now, you can try it yourselves.
+
+## 19 · Augmented reality · 增强现实 — 0:30
+*The emblem is the anchor.*
+
+`[point to QR]` Now it's your turn. Scan this code: it opens in the browser, with **no app to install**. Point your phone at the emblem on the slide, and the tree appears; then switch seasons yourself.
+Why the emblem? It was a deliberate choice. The trees exist because of the university's anniversary, so it felt right that the university's own symbol **calls them back**.
+`[leave the slide up ≈ 20 s while people scan]`
 
 ## 20 · Interpretation · 阐释策略 — 0:30
 *Four layers of time in one tree.*
@@ -153,9 +154,9 @@ Appendix: keep this slide up during questions.
 
 ## Before presenting · 上台前检查
 - [ ] **Check the image sources.** Feishu photos are credited on the slides; the Xuan Guorong 2024 photo is from Xiaohongshu @诺坎普の猫. Site plans come from the campus CAD file; modelling figures come from our analysis set.
-- [ ] **Check the AR recording slide (19).** It plays automatically and loops. Chapter jumps need the online link or a double-clicked local file. A plain local `python -m http.server` cannot seek.
+- [ ] **Check the AR recording slide (18).** It plays automatically and loops. Chapter jumps need the online link or a double-clicked local file. A plain local `python -m http.server` cannot seek.
 - [ ] **Test on the classroom computer.** Wait for the model to load (about 3–5 s). With no internet, the fonts fall back to system fonts but everything else works.
-- [ ] **Charge your phone and print the emblem target** (`assets/emblem-target.jpg`), or show it on a second screen for the live AR demo. If the live demo fails, go straight to slide 19.
+- [ ] **Charge your phone and print the emblem target** (`assets/emblem-target.jpg`), or show it on a second screen for the live AR demo. On slide 19, leave the QR up for about 20 s; if the audience's phones struggle, point back to the recording on slide 18.
 
 ## 可能的提问 · Likely questions
 - **Was the tree laser-scanned?** We started from an existing scan mesh (.fbx) of the lower trunk. The file does not record the device, so we do not call it TLS. The crown was completed from 8 photos and rules, and each source is on its own layer.
