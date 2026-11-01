@@ -269,6 +269,8 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--mute);margin-top:9
 #loader.done{opacity:0;pointer-events:none}
 #help{position:fixed;top:14px;right:18px;font-family:var(--mono);font-size:11.5px;color:rgba(255,255,255,.3);z-index:20}
 aside.notes{display:none}
+body.print #ui,body.print #counter,body.print #help,body.print #timer,body.print #notes{display:none!important}
+body.print .slide{transition:none!important}
 </style>
 </head>
 <body>
@@ -285,9 +287,9 @@ aside.notes{display:none}
     <p class="sub">A digital twin and seasonal AR interpretation of the sakura trees on Aixiao Road, Tongji University.</p>
   </div>
   <div class="meta">
-    <span>Course</span><span>02041001 Digital Heritage Landscape</span>
+    <span>Course</span><span>Digital Heritage Landscape</span>
     <span>Object</span><span>Sakura Avenue · 爱校路樱花树</span>
-    <span>Date</span><span>2 November 2026</span>
+    <span>Group Members</span><span>吕思扬 · 李欣芸 · 张弥月 · 李成蹊 · 唐家辉 · 卓虹礼</span>
   </div>
   <aside class="notes" data-t="0:25">Good morning. My project is about a tree you&#x27;ve probably walked past many times: the <b>cherry trees on Aixiao Road</b>. My title comes from four characters carved on a stone beneath them: <b>樱花为证</b>, &quot;cherry blossoms as witness&quot;. In the next six minutes I&#x27;ll show what these trees witness, how I built a <b>digital twin</b> of one of them, and how AR lets us see it in <b>every season</b>.</aside>
 </section>
@@ -537,6 +539,7 @@ aside.notes{display:none}
 (function(){
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const deck=$('#deck'), slides=$$('.slide');
+const Q=new URLSearchParams(location.search),PRINT=Q.has('print');if(PRINT)document.body.classList.add('print');
 let cur=0;
 
 /* ---------- scaling ---------- */
@@ -617,7 +620,7 @@ key.position.set(5,10,7);fill.position.set(-6,4,-5);scene.add(hemi,key,fill);
 const tree=new THREE.Group();scene.add(tree);
 const controls=new THREE.OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.08;controls.maxPolarAngle=Math.PI*.56;controls.enablePan=false;controls.autoRotateSpeed=.6;
 
-let s9Season='spring',meshes=[],skeleton,leaves,flowers,leafSamples=[],flowerSamples=[],season='spring',density=.75,mode='mesh',bounds,current3d=null,host=null;
+let s9Season=Q.get('season')||'spring',meshes=[],skeleton,leaves,flowers,leafSamples=[],flowerSamples=[],season='spring',density=.75,mode='mesh',bounds,current3d=null,host=null;
 const bin=Uint8Array.from(atob(D.glb),c=>c.charCodeAt(0));
 new THREE.GLTFLoader().parse(bin.buffer,'',gltf=>{
   gltf.scene.traverse(o=>{if(o.isMesh){meshes.push(o);const a=o.geometry.getAttribute('color');if(a){const c=new THREE.Color();for(let i=0;i<a.count;i++){c.setRGB(a.getX(i),a.getY(i),a.getZ(i)).convertSRGBToLinear();a.setXYZ(i,c.r,c.g,c.b);}a.needsUpdate=true;}
