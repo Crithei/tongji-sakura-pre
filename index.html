@@ -1001,9 +1001,9 @@ function anShow(i){$$('#anTabs .chip').forEach((b,j)=>b.setAttribute('aria-press
 $$('#anTabs .chip').forEach(b=>b.onclick=()=>anShow(+b.dataset.i));anShow(0);
 /* AR video chapters */
 (function(){const v=$('#arv');if(!v)return;const bs=$$('#chap button');
-  bs.forEach(b=>b.onclick=()=>{v.currentTime=+b.dataset.t;v.play().catch(()=>{});});
-  v.addEventListener('timeupdate',()=>{const t=v.currentTime;let k=0;bs.forEach((b,i)=>{if(t>=+b.dataset.t)k=i;});bs.forEach((b,i)=>b.classList.toggle('on',i===k));
-    $('#vbar').style.width=(v.duration?t/v.duration*100:0)+'%';});})();
+  const mark=t=>{let k=0;bs.forEach((b,i)=>{if(t>=+b.dataset.t)k=i;});bs.forEach((b,i)=>b.classList.toggle('on',i===k));$('#vbar').style.width=(v.duration?t/v.duration*100:0)+'%';};
+  bs.forEach(b=>b.onclick=()=>{v.currentTime=+b.dataset.t;mark(+b.dataset.t);v.play().catch(()=>{});});
+  v.addEventListener('timeupdate',()=>mark(v.currentTime));mark(0);})();
 (function months(){const m='JFMAMJJASOND'.split('');$('#months').innerHTML=m.map((c,i)=>`<i data-m="${i}">${c}</i>`).join('');})();
 
 /* ---------- petals on title ---------- */
