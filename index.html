@@ -18,8 +18,8 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;background:#0b0f0d;overflow:hidden;font-family:var(--sans);color:var(--ink)}
-#viewport{position:fixed;inset:0;display:grid;place-items:center}
-#deck{width:1600px;height:900px;position:relative;transform-origin:center;flex:none}
+#viewport{position:fixed;inset:0;overflow:hidden}
+#deck{width:1600px;height:900px;position:absolute;left:50%;top:50%;margin:-450px 0 0 -800px;transform-origin:center;flex:none}
 .slide{position:absolute;inset:0;background:var(--paper);overflow:hidden;opacity:0;visibility:hidden;transition:opacity .6s ease,visibility 0s .6s}
 .slide.active{opacity:1;visibility:visible;transition:opacity .6s ease}
 .slide.dark{background:var(--night);color:#eee8dc}
@@ -840,7 +840,7 @@ body.print .slide{transition:none!important}
   <div class="right">
     <div class="kicker" style="margin-bottom:14px">Your turn · 扫码体验</div>
     <div class="qr" id="qr"></div>
-    <div class="url">tongji-sakura-ar.genialyew33.chatgpt.site</div>
+    <div class="url">ar.nyxal.site</div>
     <img class="target" src="assets/emblem-target.jpg" alt="Emblem target">
     <div class="src" style="margin-top:8px">↑ IMAGE TARGET · 识别图</div>
   </div>
@@ -996,7 +996,7 @@ const TOTAL=$$('aside.notes').reduce((a,n)=>{const [m,x]=(n.dataset.t||'0:0').sp
 function fmt(s){return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;}
 
 /* ---------- static decorations ---------- */
-(function qr(){try{const q=qrcode(0,'M');q.addData('https://tongji-sakura-ar.genialyew33.chatgpt.site/');q.make();$('#qr').innerHTML=q.createSvgTag({cellSize:4,margin:0,scalable:true});}catch(e){}})();
+(function qr(){try{const q=qrcode(0,'M');q.addData('https://ar.nyxal.site/');q.make();$('#qr').innerHTML=q.createSvgTag({cellSize:4,margin:0,scalable:true});}catch(e){}})();
 /* analysis gallery */
 const AN=[
   {big:'165–180°',h:'Orientation rose',p:'Branch length, binned in 15° sectors, peaks in one sector, and steep axes sit low in the crown.',lim:'Model axes are not yet registered to north, so no claim about sunlight or aspect.'},
