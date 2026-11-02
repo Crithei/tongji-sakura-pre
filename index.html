@@ -947,6 +947,7 @@ body.print .slide{transition:none!important}
 <script src="assets/js/three.min.js"></script>
 <script src="assets/js/OrbitControls.js"></script>
 <script src="assets/js/GLTFLoader.js"></script>
+<script src="assets/js/meshopt_decoder.js"></script>
 <script src="assets/js/qrcode.min.js"></script>
 <script src="assets/js/tree-data.js"></script>
 <script>
@@ -1053,7 +1054,7 @@ const controls=new THREE.OrbitControls(camera,renderer.domElement);controls.enab
 
 let s9Season=Q.get('season')||'spring',meshes=[],skeleton,leaves,flowers,leafSamples=[],flowerSamples=[],season='spring',density=.75,mode='mesh',bounds,current3d=null,host=null;
 const bin=Uint8Array.from(atob(D.glb),c=>c.charCodeAt(0));
-new THREE.GLTFLoader().parse(bin.buffer,'',gltf=>{
+new THREE.GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parse(bin.buffer,'',gltf=>{
   gltf.scene.traverse(o=>{if(o.isMesh){meshes.push(o);const a=o.geometry.getAttribute('color');if(a){const c=new THREE.Color();for(let i=0;i<a.count;i++){c.setRGB(a.getX(i),a.getY(i),a.getZ(i)).convertSRGBToLinear();a.setXYZ(i,c.r,c.g,c.b);}a.needsUpdate=true;}
     o.userData.solid=o.material;o.userData.wire=new THREE.MeshBasicMaterial({color:0xe7e1d5,wireframe:true,transparent:true,opacity:.2});}});
   tree.add(gltf.scene);bounds=new THREE.Box3().setFromObject(tree);
